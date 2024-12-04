@@ -2,26 +2,23 @@ manifestVersion: 1
 id: biati-coolify
 name: Coolify
 tagline: Coolify
-icon: https://svgur.com/i/mvA.svg
+icon: https://raw.githubusercontent.com/biati-digital/umbrel-app-store/refs/heads/master/assets/coolify.svg
 category: Development
 version: "1.0.0"
 port: 8000
 description: >-
-  Add your app's description here.
-  You can also add newlines!
+  An open-source & self-hostable Heroku / Netlify / Vercel alternative.
 
-developer: Biati
-website: https://biati.com
+developer: Coolify
+website: https://coolify.io
 submitter: Biati
 submission: https://github.com/biati-digital/umbrel-app-store/biati-coolify
 repo: https://github.com/biati-digital/umbrel-app-store/biati-coolify
 support: https://github.com/biati-digital/umbrel-app-store/biati-coolify/issues
 gallery:
   - https://i.imgur.com/yyVG0Jb.jpeg
-  - https://i.imgur.com/yyVG0Jb.jpeg
-  - https://i.imgur.com/yyVG0Jb.jpeg
 releaseNotes: >-
-  Add what's new in the latest version of your app here.
+  First release
 dependencies: []
 path: ""
 defaultUsername: ""
