@@ -1,6 +1,12 @@
 services:
+  app_proxy:
+    environment:
+      APP_HOST: biati-coolify_coolify_1
+      APP_PORT: 8000
+      PROXY_AUTH_ADD: "false"
+
   coolify-testing-host:
-    init: true
+    #init: true
     image: ghcr.io/coollabsio/coolify-testing-host:latest
     pull_policy: always
     container_name: coolify-testing-host
@@ -9,6 +15,7 @@ services:
       - ./:/data/coolify
   coolify:
     image: ghcr.io/coollabsio/coolify:latest
+    init: true
     pull_policy: always
     container_name: coolify
     restart: always
@@ -16,6 +23,7 @@ services:
     extra_hosts:
       - host.docker.internal:host-gateway
     volumes:
+      - /var/run/docker.sock:/var/run/docker.sock
       - ./ssh:/var/www/html/storage/app/ssh
       - ./applications:/var/www/html/storage/app/applications
       - ./databases:/var/www/html/storage/app/databases
