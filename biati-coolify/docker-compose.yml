@@ -3,7 +3,7 @@ services:
   app_proxy:
     environment:
       # The format here is: <app-id>_<docker-service-name>_1
-      APP_HOST: biati-coolify_1
+      APP_HOST: biati-coolify_coolify_1
       APP_PORT: 8000
 
 
