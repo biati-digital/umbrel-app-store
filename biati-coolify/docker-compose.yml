@@ -34,8 +34,9 @@ services:
       - APP_ENV=production
       - APP_NAME
       - APP_KEY
-      - DB_PASSWORD
-      - REDIS_PASSWORD
+      - DB_USERNAME=coolify
+      - DB_PASSWORD=coolify
+      - REDIS_PASSWORD=coolify
       - SSL_MODE=off
       - PHP_PM_CONTROL=dynamic
       - PHP_PM_START_SERVERS=1
@@ -45,6 +46,9 @@ services:
       - SELF_HOSTED=true
       - SSH_MUX_ENABLED=false
       - IS_WINDOWS_DOCKER_DESKTOP=true
+      - PUSHER_APP_ID=coolify
+      - PUSHER_APP_KEY=coolify
+      - PUSHER_APP_SECRET=coolify
     ports:
       - "${APP_PORT:-8000}:80"
     expose:
