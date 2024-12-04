@@ -6,7 +6,6 @@ services:
       APP_HOST: biati-coolify_coolify_1
       APP_PORT: 8000
 
-
   coolify-testing-host:
     init: true
     image: "ghcr.io/coollabsio/coolify-testing-host:latest"
@@ -14,7 +13,7 @@ services:
     container_name: coolify-testing-host
     volumes:
       - /var/run/docker.sock:/var/run/docker.sock
-      - ${APP_DATA_DIR}:/data/coolify
+      - /${APP_DATA_DIR}://data/coolify
   coolify:
     image: "ghcr.io/coollabsio/coolify:latest"
     pull_policy: always
