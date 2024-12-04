@@ -1,4 +1,11 @@
+version: "3.7"
+
 services:
+  app_proxy:
+    environment:
+      APP_HOST: biati-coolify_coolify_1
+      APP_PORT: 8000
+
   coolify-testing-host:
     init: true
     image: ghcr.io/coollabsio/coolify-testing-host:latest
