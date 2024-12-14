@@ -1,0 +1,25 @@
+manifestVersion: 1
+id: biati-dokploy
+name: Dokploy
+tagline: Self-hosting with superpowers
+icon: https://raw.githubusercontent.com/biati-digital/umbrel-app-store/refs/heads/master/assets/coolify-icon.svg
+category: Development
+version: "1.0.0"
+port: 3003
+description: >-
+  Dokploy is a free, self-hostable Platform as a Service (PaaS) that simplifies the deployment and management of applications and databases.
+
+developer: Dokploy
+website: https://dokploy.com
+submitter: Biati
+submission: https://github.com/biati-digital/umbrel-app-store/biati-dokploy
+repo: https://github.com/biati-digital/umbrel-app-store/biati-dokploy
+support: https://github.com/biati-digital/umbrel-app-store/biati-dokploy/issues
+gallery:
+  - https://i.imgur.com/yyVG0Jb.jpeg
+releaseNotes: >-
+  First release
+dependencies: []
+path: ""
+defaultUsername: ""
+defaultPassword: ""

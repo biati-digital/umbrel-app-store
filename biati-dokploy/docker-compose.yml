@@ -1,0 +1,21 @@
+services:
+  dokploy:
+    image: dokploy/dokploy:latest
+    # init: true
+    pull_policy: always
+    container_name: dokploy
+    restart: always
+    working_dir: /var/www/html
+    extra_hosts:
+      - host.docker.internal:host-gateway
+    volumes:
+      - /var/run/docker.sock:/var/run/docker.sock
+      - ${APP_DATA_DIR}/dokploy:/etc/dokploy
+    environment:
+      - PORT=3003
+      - TRAEFIK_PORT=81
+      - RELEASE_TAG=latest
+    ports:
+      - ${APP_PORT:-3003}:80
+    expose:
+      - ${APP_PORT:-3003}
