@@ -5,7 +5,7 @@ tagline: Self-hosting with superpowers
 icon: https://raw.githubusercontent.com/biati-digital/umbrel-app-store/refs/heads/master/assets/coolify-icon.svg
 category: Development
 version: "1.0.0"
-port: 3003
+port: 3000
 description: >-
   Dokploy is a free, self-hostable Platform as a Service (PaaS) that simplifies the deployment and management of applications and databases.
 
