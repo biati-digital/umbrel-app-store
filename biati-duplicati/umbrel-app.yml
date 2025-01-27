@@ -5,6 +5,7 @@ tagline: Store securely encrypted backups in the cloud
 category: files
 version: "2.1.0.2_beta_2024-11-29"
 port: 38476
+icon: https://getumbrel.github.io/umbrel-apps-gallery/duplicati/icon.svg
 description: >-
   Pick your own backend and store encrypted backups of your umbrel files anywhere!
 
